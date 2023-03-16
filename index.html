@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="banner">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and send us your feedback !</p>
+        </div>
+        <div class="green-bg">
+          <button type="button">Feedback</button>
+        </div>
+        <form name="submit-to-google-sheet" class="submit-to-google-sheet">
+          <h1>Feedback Form</h1>
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input name="name" type="text" placeholder="Name" />
+          </div>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input name="email" type="email" placeholder="Email" />
+          </div>
+          <div class="input-group">
+            <input name="product_type" class="datalist" list="browsers" name="browser" placeholder="Choose product type">
+            <datalist id="browsers" type="product_type">
+                <option value="E-Learning CNC">
+                <option value="E-Learning Robotics">
+                <option value="E-Learning Automation">
+                <option value="E-Learning Industry 4.0">
+                <option value="Software Open Source">
+                <option value="Abhyaz Bootcamp Marketing Automation & Analytics">
+                <option value="Abhyaz Bootcamp HR Operations & Analytics">
+              </datalist>
+          </div>
+          <div class="input-group">
+            <p>Rate</p>
+            <input class="rate" type="radio" id="1" name="rate" value="1">
+          <label for="male">1</label>
+           <input class="rate" type="radio" id="2" name="rate" value="2">
+          <label for="female">2</label>
+          <input class="rate" type="radio" id="3" name="rate" value="3">
+          <label for="other">3</label>
+          <input class="rate" type="radio" id="4" name="rate" value="4">
+          <label for="other">4</label>
+          <input class="rate" type="radio" id="5" name="rate" value="5">
+          <label for="other">5</label>
+          </div>
+          <div class="input-group">
+            <textarea name="feedback" rows="10" cols="30" placeholder="Enter feedback"></textarea>
+          </div>
+          <div class="confirm" id="confirm">Feedback Send Successfully!</div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
